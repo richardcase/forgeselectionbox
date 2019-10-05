@@ -21,7 +21,7 @@ AAA.Extension.SectionBoxTest = function(viewer, options) {
         const model = models[0];
 
         const sbext = _self.viewer.getExtension('Autodesk.Section');
-        const sectionTool = sbext.tool.getSectionBoxValues();
+        const sectionTool = sbext.tool.getSectionBoxValues(true);
         const sb = sectionTool.sectionBox;
         const sbt = sectionTool.sectionBoxTransform;
 
